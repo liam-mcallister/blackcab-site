@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/liam-mcallister/blackcab-site/issues"
   },
-  "homepage": "https://github.com/liam-mcallister/blackcab-site#readme"
+  "homepage": "https://github.com/liam-mcallister/blackcab-site#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.0"
+  }
 }
