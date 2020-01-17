@@ -2,5 +2,16 @@
 .jumbotron {
   height: 100vh;
   margin: 0;
+  background: url("/src/images/jumbotron-background.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* NAVBAR TOGGLER */
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:hover {
+  border: none;
+  outline: none;
 }
 /*# sourceMappingURL=styles.css.map */
