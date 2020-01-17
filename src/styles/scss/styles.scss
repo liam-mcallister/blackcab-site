@@ -1,8 +1,8 @@
 /* JUMBOTRON */
 .jumbotron {
-    height: 100vh;
+    min-height: calc(100vh - 56px);
     margin: 0;
-    background: url("/src/images/jumbotron-background.jpg") no-repeat center center fixed;
+    background: url("/src/images/jumbotron-background.jpg") no-repeat center center;
     background-size: cover;
 }
 
