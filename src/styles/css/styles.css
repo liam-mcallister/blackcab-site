@@ -1,9 +1,26 @@
+body {
+  background: url("/src/images/jumbotron-background.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.footer, .copyright {
+  background: #232323;
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
 /* JUMBOTRON */
 .jumbotron {
   min-height: calc(100vh - 56px);
   margin: 0;
-  background: url("/src/images/jumbotron-background.jpg") no-repeat center center;
-  background-size: cover;
+  background: transparent;
 }
 
 /* NAVBAR TOGGLER */
