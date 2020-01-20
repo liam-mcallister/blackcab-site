@@ -12,15 +12,23 @@
     <title>Black Cab Tours | Belfast</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--STYLESHEETS-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/css/styles.css">
 </head>
 
+
+
+
+
+
+
+
 <body>
 
-    <nav class="navbar navbar-expand-md navbar-light font-weight-bold">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top font-weight-bold">
         <a href="#" class="navbar-brand">Company Logo</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar"
             aria-controls="collapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,34 +37,128 @@
         <div class="collapse navbar-collapse text-center" id="collapsingNavbar">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#company-info" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#tours" class="nav-link">Tours</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#footer" class="nav-link">Contact</a></li>
             </ul>
-            <button type="button" class="btn btn-warning">Book Now</button>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item btn btn-warning"><a href="#" class="nav-link">Book Now</a></li>
+            </ul>
         </div>
     </nav>
 
+
+
+
     <div class="jumbotron jumbotron-fluid d-flex align-items-center">
-        <div class="container-fluid text-center">
-            <h1>Some Text</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Eum provident hic dicta ratione, eius voluptates natus molestiae reprehenderit ea.
-                Cum rerum tenetur officiis similique quis, aspernatur natus facilis iste sed!
-            </p>
-            <button type="button" class="btn btn-warning">Book Now</button>
+        <div class="container-fluid h-100">
+            <div class="row h-100 align-items-center justify-content-center text-center">
+                <h1>Some Text</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Eum provident hic dicta ratione, eius voluptates natus molestiae reprehenderit ea.
+                    Cum rerum tenetur officiis similique quis, aspernatur natus facilis iste sed!
+                </p>
+                <button type="button" class="btn btn-warning rounded-0">Book Now</button>
+            </div>
         </div>
     </div>
 
-    <footer class="footer">
+
+
+
+    <div class="company-info" id="company-info">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>A little bit about us</h3>
+                </div>
+                <div class="col-md-6">
+                    <p>some text</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="tours" id="tours">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card rounded-0 border-0">
+                        <img src="/src/images/jumbotron-background.jpg" alt="" class="card-img-top rounded-0">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title</h5>
+                            <p class="card-text">Some text.</p>
+                            <a href="" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card rounded-0 border-0">
+                        <img src="/src/images/jumbotron-background.jpg" alt="" class="card-img-top rounded-0">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title</h5>
+                            <p class="card-text">Some text.</p>
+                            <a href="" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card rounded-0 border-0">
+                        <img src="/src/images/jumbotron-background.jpg" alt="" class="card-img-top rounded-0">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title</h5>
+                            <p class="card-text">Some text.</p>
+                            <a href="" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card rounded-0 border-0">
+                        <img src="/src/images/jumbotron-background.jpg" alt="" class="card-img-top rounded-0">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title</h5>
+                            <p class="card-text">Some text.</p>
+                            <a href="" class="btn btn-primary">More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer" id="footer">
         <div class="container-fluid">
             <div class="row p-2">
                 <div class="col-md-4">
-                    <h3>Contact Info</h3>
-                    <ul>
-                        <li>02890111111</li>
-                        <li>info@email.com</li>
+                    <h3 class="pb-3">Contact Info</h3>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-phone fa-2x"></i>02890111111</li>
+                        <li><i class="fas fa-envelope fa-2x"></i>info@email.com</li>
                     </ul>
                     <div>
                         <a href="#"><i class="fab fa-facebook fa-3x"></i></a>
@@ -68,21 +170,21 @@
                 <div class="col-md-4">
                 </div>
                 <div class="col-md-4">
-                    <h3>Get in Touch</h3>
+                    <h3 class="pb-3">Get in Touch</h3>
                     <form action="">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Name">
+                            <input type="text" class="form-control rounded-0" placeholder="Name">
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email">
+                            <input type="email" class="form-control rounded-0" placeholder="Email">
                         </div>
                         <div class="form-group">
-                            <input type="tel" class="form-control" placeholder="Phone">
+                            <input type="tel" class="form-control rounded-0" placeholder="Phone">
                         </div>
                         <div class="form-group">
-                            <textarea name="" id="" rows="10" class="form-control"></textarea>
+                            <textarea name="" id="" rows="10" class="form-control rounded-0"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-danger">Submit</button>
+                        <button type="submit" class="btn btn-danger rounded-0">Submit</button>
                     </form>
                 </div>
             </div>
@@ -92,7 +194,7 @@
     <div class="copyright">
         <div class="container-fluid">
             <div class="row p-2">
-                <div class="col-md-8">
+                <div class="col-md-8 pl-2 pr-2">
                     <h6>&copy; Cab Company 2020</h6>
                 </div>
                 <div class="col-md-4">
@@ -102,26 +204,8 @@
         </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <a id="back-to-top" href="#" class="btn btn-light btn-lg rounded-0 back-to-top" role="button"><i
+            class="fas fa-chevron-up"></i></a>
 
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
