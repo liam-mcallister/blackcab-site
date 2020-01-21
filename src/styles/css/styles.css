@@ -1,23 +1,25 @@
 /* FONT COLORS */
-/* BUTTON COLORS */
-/* BACKGROUND COLORS */
-*, *:before, *:after {
+/* SITE COLORS */
+*,
+*:before,
+*:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 body {
-  background: #b4b4b4;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(58, 46, 57, 0.7)), to(rgba(30, 85, 92, 0.7))), url(../../images/jumbotron-background.jpg) fixed center center no-repeat;
+  background: linear-gradient(to bottom, rgba(58, 46, 57, 0.7) 0, rgba(30, 85, 92, 0.7) 100%), url(../../images/jumbotron-background.jpg) fixed center center no-repeat;
+  color: #ffffff;
 }
 
 .footer,
 .copyright {
   background: #232323;
-  color: #ffffff;
 }
 
 .company-info {
-  background: #787897;
+  background: #f15152;
 }
 
 .tours {
@@ -30,12 +32,13 @@ body {
 
 .navbar-solid {
   background: #ffffff;
+  color: #343434;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-.social {
-  background: #787897;
+.navbar-solid a {
+  color: #343434;
 }
 
 /* NAVBAR TOGGLER */
@@ -50,6 +53,7 @@ body {
 /* JUMBOTRON */
 .jumbotron {
   min-height: 100vh;
+  max-height: 100vh;
   margin: 0;
   background: transparent;
 }
@@ -67,9 +71,22 @@ a {
   color: #ffffff;
 }
 
+/* BUTTONS */
+.btn {
+  background: #f15152;
+  border: none;
+  border-radius: 10rem;
+}
+
+/* MEDIA QUERIES */
 @media only screen and (max-width: 768px) {
   .navbar {
+    background: #f4d8cd;
+    color: #343434;
     top: 0;
+  }
+  a {
+    color: #343434;
   }
   .social {
     display: none;

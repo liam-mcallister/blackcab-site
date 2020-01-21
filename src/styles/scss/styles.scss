@@ -1,21 +1,24 @@
-@import 'variables', 'functions', 'mixins';
+@import "variables", "functions", "mixins";
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: border-box;
 }
 
 body {
-    background: #b4b4b4;
+    background: linear-gradient(to bottom, $color1-opac 0, $color2-opac 100%),
+        url(../../images/jumbotron-background.jpg) fixed center center no-repeat;
+    color: $fontLight;
 }
 
 .footer,
 .copyright {
     background: #232323;
-    color: $fontLight;
 }
 
 .company-info {
-    background: #787897;
+    background: $color5;
 }
 
 .tours {
@@ -28,13 +31,13 @@ body {
 
 .navbar-solid {
     background: #ffffff;
+    color: $fontDark;
     transition: all 0.5s ease-in-out;
-}
 
-.social {
-    background: #787897;
+    a {
+        color: $fontDark;
+    }
 }
-
 
 /* NAVBAR TOGGLER */
 .navbar-toggler,
@@ -48,6 +51,7 @@ body {
 /* JUMBOTRON */
 .jumbotron {
     min-height: 100vh;
+    max-height: 100vh;
     margin: 0;
     background: transparent;
 }
@@ -62,17 +66,28 @@ body {
 
 /* LINKS */
 a {
-    color: #ffffff;
+    color: $fontLight;
 }
 
+/* BUTTONS */
+.btn {
+    background: $color5;
+    border: none;
+    border-radius: 10rem;
+}
 
-
-
+/* MEDIA QUERIES */
 @media only screen and (max-width: 768px) {
+    // Medium Width for Bootstrap
     .navbar {
+        background: $color3;
+        color: $fontDark;
         top: 0;
+    }
+    a {
+        color: $fontDark;
     }
     .social {
         display: none;
     }
-  }
+}

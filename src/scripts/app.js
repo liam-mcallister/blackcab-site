@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
-    $(window).scroll(function() {
-        if ( $(window).scrollTop() > 50 ) {
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 50) {
             $('#back-to-top').fadeIn();
             $('#navbar').addClass('navbar-solid');
         } else {
@@ -10,7 +10,7 @@ $(document).ready(function () {
         }
     });
 
-    $('#back-to-top').click(function() {
+    $('#back-to-top').click(function () {
         $('html, body').animate({
             scrollTop: 0
         }, 700);
