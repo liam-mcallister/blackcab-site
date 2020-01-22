@@ -31,14 +31,14 @@ body {
 }
 
 .navbar-solid {
-  background: #ffffff;
-  color: #343434;
+  background: #1e555c;
+  color: #ffffff;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 .navbar-solid a {
-  color: #343434;
+  color: #ffffff;
 }
 
 /* NAVBAR TOGGLER */
@@ -74,19 +74,27 @@ a {
 /* BUTTONS */
 .btn {
   background: #f15152;
+  color: #ffffff;
+  font-size: 16px;
   border: none;
   border-radius: 10rem;
+  -webkit-box-shadow: 5px 10px 8px #2e2e2e;
+          box-shadow: 5px 10px 8px #2e2e2e;
+}
+
+.btn :hover {
+  background: #f9afb0;
 }
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 768px) {
   .navbar {
-    background: #f4d8cd;
-    color: #343434;
+    background: #1e555c;
+    color: #ffffff;
     top: 0;
   }
   a {
-    color: #343434;
+    color: #ffffff;
   }
   .social {
     display: none;

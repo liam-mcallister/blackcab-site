@@ -30,12 +30,12 @@ body {
 }
 
 .navbar-solid {
-    background: #ffffff;
-    color: $fontDark;
+    background: $color2;
+    color: $fontLight;
     transition: all 0.5s ease-in-out;
 
     a {
-        color: $fontDark;
+        color: $fontLight;
     }
 }
 
@@ -72,20 +72,27 @@ a {
 /* BUTTONS */
 .btn {
     background: $color5;
+    color: $fontLight;
+    font-size: 16px;
     border: none;
     border-radius: 10rem;
+    box-shadow: 5px 10px 8px #2e2e2e;
+
+    :hover {
+        background: lighten($color5, 20);
+    }
 }
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 768px) {
     // Medium Width for Bootstrap
     .navbar {
-        background: $color3;
-        color: $fontDark;
+        background: $color2;
+        color: $fontLight;
         top: 0;
     }
     a {
-        color: $fontDark;
+        color: $fontLight;
     }
     .social {
         display: none;
