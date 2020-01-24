@@ -7,22 +7,16 @@
 }
 
 body {
-    background: linear-gradient(to bottom, $color1-opac 0, $color2-opac 100%),
-        url(../../images/jumbotron-background.jpg) fixed center center no-repeat;
     color: $fontLight;
 }
 
-.footer,
-.copyright {
-    background: #232323;
-}
-
-.company-info {
-    background: $color5;
-}
-
-.tours {
-    background: #ffffff;
+/* NAVBAR */
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:hover {
+    border: none;
+    outline: none;
 }
 
 .navbar {
@@ -39,34 +33,99 @@ body {
     }
 }
 
-/* NAVBAR TOGGLER */
-.navbar-toggler,
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler:hover {
-    border: none;
-    outline: none;
-}
-
 /* JUMBOTRON */
 .jumbotron {
-    min-height: 100vh;
-    max-height: 100vh;
-    margin: 0;
-    background: transparent;
+    height: 100vh;
+    min-height: 40rem;
+    padding: 72px 0 0 0;
+    background: linear-gradient(to bottom, $color1-opac 0, $color2-opac 100%),
+        url(../../images/jumbotron-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+/* ABOUT */
+.company-info {
+    background: #ffffff;
+    color: $fontDark;
+}
+
+/* TOURS */
+.tours {
+    background: #ffffff;
+}
+
+.tour-box {
+    position: relative;
+    display: block;
+}
+
+.tours-caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    color: $fontLight;
+    background: $color5-opac;
+    transition: opacity 0.25s ease;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+/* REVIEWS */
+.reviews {
+    background: $color1;
+    color: $fontLight;
+}
+
+.carousel-inner {
+    margin: 3rem 0;
+    height: 200px;
+}
+
+.carousel-indicators {
+    bottom: -50px;
+
+    li {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+    }
+}
+
+/* FOOTER */
+.footer,
+.copyright {
+    background: #232323;
 }
 
 /* BACK TO TOP BUTTON */
 .back-to-top {
     position: fixed;
-    bottom: 25px;
-    right: 25px;
+    bottom: 30px;
+    right: 30px;
     display: none;
 }
 
 /* LINKS */
 a {
     color: $fontLight;
+
+    &:hover {
+        color: $color5;
+    }
+}
+
+.active-link {
+    color: $color5;
 }
 
 /* BUTTONS */
@@ -76,11 +135,14 @@ a {
     font-size: 16px;
     border: none;
     border-radius: 10rem;
-    box-shadow: 5px 10px 8px #2e2e2e;
+}
 
-    :hover {
-        background: lighten($color5, 20);
-    }
+/* DIVIDER */
+.divider {
+    width: 3.25rem;
+    max-width: 3.25rem;
+    border-width: 0.2rem;
+    border-color: $color5;
 }
 
 /* MEDIA QUERIES */
