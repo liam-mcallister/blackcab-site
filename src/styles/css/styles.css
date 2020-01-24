@@ -146,12 +146,24 @@ a:hover {
   border-radius: 10rem;
 }
 
+.btn:focus,
+.btn:active {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 /* DIVIDER */
 .divider {
   width: 3.25rem;
   max-width: 3.25rem;
   border-width: 0.2rem;
   border-color: #f15152;
+}
+
+/* FONT AWESOME */
+i {
+  vertical-align: middle;
 }
 
 /* MEDIA QUERIES */
