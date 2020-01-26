@@ -146,8 +146,15 @@ a:hover {
   border-radius: 10rem;
 }
 
-.btn:focus,
-.btn:active {
+.btn:focus, .btn:active {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/* INPUTS */
+.form-control:focus,
+.form-control:active {
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -161,8 +168,8 @@ a:hover {
   border-color: #f15152;
 }
 
-/* FONT AWESOME */
-i {
+/* CONTACT ICONS */
+.custom-align-middle {
   vertical-align: middle;
 }
 
@@ -178,6 +185,25 @@ i {
   }
   .social {
     display: none;
+  }
+  .custom-flex-between {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .custom-flex-between {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 /*# sourceMappingURL=styles.css.map */
