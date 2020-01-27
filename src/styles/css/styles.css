@@ -131,6 +131,7 @@ a {
 
 a:hover {
   color: #f15152;
+  text-decoration: none;
 }
 
 .active-link {
