@@ -20,7 +20,7 @@ body {
 }
 
 .navbar {
-    background: transparent;
+    background: $color2;
 }
 
 .navbar-solid {
@@ -164,6 +164,12 @@ a {
     vertical-align: middle;
 }
 
+/* TOURS PAGE */
+.tour-one {
+    margin-top: 96px;
+    background: #db1111;
+}
+
 /* MEDIA QUERIES */
 @media only screen and (max-width: 768px) {
     // Medium Width for Bootstrap
@@ -175,9 +181,7 @@ a {
     a {
         color: $fontLight;
     }
-    .social {
-        display: none;
-    }
+
     .custom-flex-between {
         display: flex;
         justify-content: space-between;
@@ -189,5 +193,16 @@ a {
     .custom-flex-between {
         display: flex;
         justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    // Extra Small Width for Bootstrap
+    .social-icons {
+        display: none;
+    }
+
+    .info-center {
+        margin: 0 auto;
     }
 }
