@@ -1,10 +1,16 @@
-/* FONT COLORS */
-/* SITE COLORS */
+/*----------------------------------------------------
+---------------------------------------- CONTENTS ----
+----------------------------------------------------*/
+/*** SITE COLORS ***/
 *,
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
 }
 
 body {
@@ -96,7 +102,7 @@ body {
 }
 
 .carousel-inner {
-  margin: 3rem 0;
+  margin-bottom: 5rem;
   height: 200px;
 }
 
@@ -114,6 +120,16 @@ body {
 .footer,
 .copyright {
   background: #232323;
+}
+
+/* COPYRIGHT */
+.custom-flex-between {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 /* BACK TO TOP BUTTON */
@@ -174,49 +190,49 @@ a:hover {
   vertical-align: middle;
 }
 
+/* FORM */
+form {
+  max-width: 500px;
+}
+
 /* TOURS PAGE */
 .tour-one {
   margin-top: 96px;
-  background: #db1111;
+  background: #ffffff;
 }
 
-/* MEDIA QUERIES */
-@media only screen and (max-width: 768px) {
-  .navbar {
-    background: #1e555c;
-    color: #ffffff;
-    top: 0;
-  }
-  a {
-    color: #ffffff;
-  }
-  .custom-flex-between {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .custom-flex-between {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
-@media only screen and (max-width: 576px) {
+/*** MEDIA QUERIES ***/
+@media (max-width: 575px) {
   .social-icons {
     display: none;
   }
   .info-center {
     margin: 0 auto;
+  }
+}
+
+@media (min-width: 576px) {
+  .jumbo-para-margin {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-inner {
+    padding: 0 5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 4rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
