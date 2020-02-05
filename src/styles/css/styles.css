@@ -1,7 +1,22 @@
 /*----------------------------------------------------
----------------------------------------- CONTENTS ----
+------------------------------- Table of Contents ----
+------------------------------------------------------
+
+1. General
+    1.1. Universal
+    1.2. Body
+2. Navigation
+    2.1. Navbar
+    2.2. Navbar Toggler
+3. Content
+    3.1. Left column
+    3.2. Right column
+    3.3. Sidebar
+4. Footer
+
 ----------------------------------------------------*/
-/*** SITE COLORS ***/
+/*---------------------------------- 1. General ----*/
+/*-- 1.1. Universal --*/
 *,
 *:before,
 *:after {
@@ -9,25 +24,24 @@
           box-sizing: border-box;
 }
 
-html {
-  font-size: 16px;
-}
-
+/*-- 1.2. Body --*/
 body {
   color: #ffffff;
 }
 
-/* NAVBAR */
+/*------------------------------- 2. Navigation ----*/
+/*-- 2.1. Navbar --*/
+.navbar {
+  background: #1e555c;
+}
+
+/*-- 2.2. Navbar Toggler --*/
 .navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler:hover {
   border: none;
   outline: none;
-}
-
-.navbar {
-  background: #1e555c;
 }
 
 .navbar-solid {
