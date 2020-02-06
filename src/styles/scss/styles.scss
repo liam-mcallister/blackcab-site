@@ -1,3 +1,5 @@
+@import "variables", "functions", "mixins";
+
 /*----------------------------------------------------
 ------------------------------- Table of Contents ----
 ------------------------------------------------------
@@ -8,15 +10,23 @@
 2. Navigation
     2.1. Navbar
     2.2. Navbar Toggler
-3. Content
-    3.1. Left column
-    3.2. Right column
-    3.3. Sidebar
-4. Footer
+3. Home Page
+    3.1. Jumbotron
+    3.2. About
+    3.3. Tours
+      3.3.1. Tour Card
+      3.3.2. Tour Caption
+    3.4. Reviews
+      3.4.1. Carousel Inner
+      3.4.2. Carousel Indicators
+4. Tours Page
+5. Booking Page
+6. Footer
+7. Copyright
+8. Components
+9. Media Queries
 
-----------------------------------------------------*/
-
-@import "variables", "functions", "mixins";
+*/
 
 /*---------------------------------- 1. General ----*/
 
@@ -48,17 +58,9 @@ body {
   outline: none;
 }
 
-.navbar-solid {
-  background: $color2;
-  color: $white;
-  transition: all 0.5s ease-in-out;
+/*-------------------------------- 3. Home Page ----*/
 
-  a {
-    color: $white;
-  }
-}
-
-/* JUMBOTRON */
+/*-- 3.1. Jumbotron --*/
 .jumbotron {
   height: 100vh;
   min-height: 40rem;
@@ -71,23 +73,24 @@ body {
   background-size: cover;
 }
 
-/* ABOUT */
+/*-- 3.2. About --*/
 .company-info {
   background: #ffffff;
-  color: $grey;
 }
 
-/* TOURS */
+/*-- 3.3. Tours --*/
 .tours {
   background: #ffffff;
 }
 
-.tour-box {
+/*-- 3.3.1. Tour Card --*/
+.tour-card {
   position: relative;
   display: block;
 }
 
-.tours-caption {
+/*-- 3.3.2. Tour Caption --*/
+.tour-caption {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -105,17 +108,19 @@ body {
   }
 }
 
-/* REVIEWS */
+/*-- 3.4. Reviews --*/
 .reviews {
   background: $color1;
   color: $white;
 }
 
+/*-- 3.4.1. Carousel Inner --*/
 .carousel-inner {
   margin-bottom: 5rem;
   height: 200px;
 }
 
+/*-- 3.4.2. Carousel Indicators --*/
 .carousel-indicators {
   bottom: -50px;
 
@@ -126,19 +131,22 @@ body {
   }
 }
 
-/* FOOTER */
-.footer,
-.copyright {
-  background: #232323;
-}
+/*------------------------------- 4. Tours Page ----*/
 
-/* COPYRIGHT */
+
+/*----------------------------- 5. Booking Page ----*/
+
+
+/*----------------------------------- 6. Footer ----*/
+
+
+/*-------------------------------- 7. Copyright ----*/
 .custom-flex-between {
   display: flex;
   justify-content: space-between;
 }
 
-/* BACK TO TOP BUTTON */
+/*------------------------------- 8. Components ----*/
 .back-to-top {
   position: fixed;
   bottom: 30px;
@@ -167,6 +175,7 @@ a {
   font-size: 16px;
   border: none;
   border-radius: 10rem;
+  max-width: 105.183px;
 
   &:focus,
   &:active {
@@ -200,13 +209,16 @@ form {
   max-width: 500px;
 }
 
-/* TOURS PAGE */
-.tour-one {
-  margin-top: 96px;
-  background: $white;
+/*-- Custom Spacer --*/
+.custom-spacer {
+  height: 96px;
 }
 
-/*** MEDIA QUERIES ***/
+.custom-tour-width {
+  max-width: 100px;
+}
+
+/*---------------------------- 9. Media Queries ----*/
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575px) {
