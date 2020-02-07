@@ -22,19 +22,19 @@
 <body>
 
     <div class="fixed-top" id="navbar">
-        <nav class="navbar social" id="first">
+        <nav class="navbar social px-3 px-lg-5" id="first">
             <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook pr-3"></i></a>
-                <a href="#"><i class="fab fa-twitter pr-3"></i></a>
-                <a href="#"><i class="fab fa-tripadvisor pr-3"></i></a>
+                <a href="#"><i class="fab fa-facebook pr-2"></i></a>
+                <a href="#"><i class="fab fa-twitter pr-2"></i></a>
+                <a href="#"><i class="fab fa-tripadvisor pr-2"></i></a>
                 <a href="#"><i class="fab fa-google-plus"></i></a>
             </div>
-            <div class="ml-auto">
+            <div class="ml-auto info-center">
                 <span><i class="fas fa-phone pr-2"></i>02890111111</span>
                 <span class="pl-4"><i class="fas fa-envelope pr-2"></i>info@email.com</span>
             </div>
         </nav>
-        <nav class="navbar navbar-expand-md" id="second">
+        <nav class="navbar navbar-expand-md px-3 px-lg-5" id="second">
             <a href="index.html" class="navbar-brand">Company Logo</a>
             <button id="navbar-toggler" class="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
                 data-target="#collapsingNavbar" aria-controls="collapsingNavbar" aria-expanded="false"
@@ -43,6 +43,7 @@
             </button>
             <div class="navbar-collapse collapse text-center" id="collapsingNavbar">
                 <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="/src/index.html#company-info" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="/src/index.html#tours" class="nav-link">Tours</a></li>
                     <li class="nav-item"><a href="/src/index.html#reviews" class="nav-link">Reviews</a></li>
@@ -55,20 +56,91 @@
         </nav>
     </div>
 
-    <div class="tour-one"></div>
+    <div class="custom-spacer"></div>
 
+    <div class="container-fluid py-5 text-dark">
+        <div class="row">
+            <div class="col-12">
+                <form class="mx-auto">
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" class="form-control rounded-0" id="firstName" required>
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" class="form-control rounded-0" id="lastName" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <label for="email">Email *</label>
+                            <input type="email" class="form-control rounded-0" id="email" required>
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="phone">Phone *</label>
+                            <input type="tel" class="form-control rounded-0" id="phone" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <label for="tourType">Select Tour: *</label>
+                            <select class="form-control rounded-0" id="tourType" name="Tour Type" required>
+                                <option value="">Please Select</option>
+                                <option value="tourOne">Tour Type 1</option>
+                                <option value="tourTwo">Tour Type 2</option>
+                                <option value="tourThree">Tour Type 3</option>
+                                <option value="tourFour">Tour Type 4</option>
+                                <option value="tourFive">Tour Type 5</option>
+                                <option value="tourSix">Tour Type 6</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="peopleNum">Number of People *</label>
+                            <input type="number" class="form-control rounded-0" id="peopleNum" min="1" max="5" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <label for="pickupAddress">Pickup Address *</label>
+                            <input type="text" class="form-control rounded-0" id="pickupAddress" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <label for="tourDate">Pick a Date: *</label>
+                            <input type="date" class="form-control rounded-0" id="tourDate" required>
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="tourTime">Pick a Time: *</label>
+                            <input type="time" class="form-control rounded-0" id="tourTime" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="10" class="form-control rounded-0"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-center">
+                            <button type="submit" class="btn btn-lg">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 
-
-
-    <footer class="footer" id="footer">
+    <footer class="footer bg-dark" id="footer">
         <div class="container-fluid">
             <div class="row text-center">
-                <div class="col-md-6 p-5">
+                <div class="p-5">
                     <h3>Contact Info</h3>
                     <hr class="divider my-4">
                     <ul class="list-unstyled">
-                        <li><i class="fas fa-phone fa-2x pr-3 pb-2 custom-align-middle"></i>02890111111</li>
-                        <li><i class="fas fa-envelope fa-2x pr-3 custom-align-middle"></i>info@email.com</li>
+                        <li><i class="fas fa-phone pr-3 pb-2 custom-align-middle"></i>02890111111</li>
+                        <li><i class="fas fa-envelope pr-3 custom-align-middle"></i>info@email.com</li>
                     </ul>
                     <div>
                         <a href="#"><i class="fab fa-facebook fa-2x pr-3"></i></a>
@@ -77,30 +149,11 @@
                         <a href="#"><i class="fab fa-google-plus fa-2x"></i></a>
                     </div>
                 </div>
-                <div class="col-md-6 px-3 py-5 px-lg-5">
-                    <h3>Get in Touch</h3>
-                    <hr class="divider my-4">
-                    <form action="">
-                        <div class="form-group">
-                            <input type="text" class="form-control rounded-0" placeholder="Name" />
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control rounded-0" placeholder="Email" />
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" class="form-control rounded-0" placeholder="Phone" />
-                        </div>
-                        <div class="form-group">
-                            <textarea name="" rows="10" class="form-control rounded-0" placeholder="Message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-lg">Submit</button>
-                    </form>
-                </div>
             </div>
         </div>
     </footer>
 
-    <div class="copyright py-2 px-3">
+    <div class="copyright py-2 px-3 px-lg-5 bg-dark">
         <div class="container-fluid">
             <div class="row custom-flex-between">
                 <span class="pr-5">&copy; Cab Company 2020</span>
