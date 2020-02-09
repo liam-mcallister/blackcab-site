@@ -59,31 +59,38 @@
     <div class="custom-spacer"></div>
 
     <div class="container-fluid py-5 text-dark">
-        <div class="row">
+        <div class="row text-center">
+            <div class="col-12">
+                <h3>Book a Tour</h3>
+                <hr class="divider my-4">
+                <small>* Required Field</small>
+            </div>
+        </div>
+        <div class="row mt-5">
             <div class="col-12">
                 <form class="mx-auto">
-                    <div class="form-group row">
-                        <div class="col-sm-6">
+                    <div class="form-group row mb-0">
+                        <div class="col-sm-6 mt-3">
                             <label for="firstName">First Name *</label>
                             <input type="text" class="form-control rounded-0" id="firstName" required>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 mt-3">
                             <label for="lastName">Last Name *</label>
                             <input type="text" class="form-control rounded-0" id="lastName" required>
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <div class="col-sm-6">
+                    <div class="form-group row mb-0">
+                        <div class="col-sm-6 mt-3">
                             <label for="email">Email *</label>
                             <input type="email" class="form-control rounded-0" id="email" required>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 mt-3">
                             <label for="phone">Phone *</label>
                             <input type="tel" class="form-control rounded-0" id="phone" required>
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <div class="col-sm-6">
+                    <div class="form-group row mb-0">
+                        <div class="col-sm-6 mt-3">
                             <label for="tourType">Select Tour: *</label>
                             <select class="form-control rounded-0" id="tourType" name="Tour Type" required>
                                 <option value="">Please Select</option>
@@ -95,72 +102,51 @@
                                 <option value="tourSix">Tour Type 6</option>
                             </select>
                         </div>
-                        <div class="col-sm-6">
-                            <label for="peopleNum">Number of People *</label>
+                        <div class="col-sm-6 mt-3">
+                            <label for="peopleNum">Number of People * (1 to 5)</label>
                             <input type="number" class="form-control rounded-0" id="peopleNum" min="1" max="5" required>
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <div class="col-12">
+                    <div class="form-group row mb-0">
+                        <div class="col-12 mt-3">
                             <label for="pickupAddress">Pickup Address *</label>
                             <input type="text" class="form-control rounded-0" id="pickupAddress" required>
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <div class="col-sm-6">
+                    <div class="form-group row mb-0">
+                        <div class="col-sm-6 mt-3">
                             <label for="tourDate">Pick a Date: *</label>
                             <input type="date" class="form-control rounded-0" id="tourDate" required>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 mt-3">
                             <label for="tourTime">Pick a Time: *</label>
                             <input type="time" class="form-control rounded-0" id="tourTime" required>
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <div class="col-12">
+                    <div class="form-group row mb-0">
+                        <div class="col-12 mt-3">
                             <label for="message">Message</label>
                             <textarea id="message" rows="10" class="form-control rounded-0"></textarea>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-12 d-flex justify-content-center">
+                    <div class="row mb-0">
+                        <div class="col-12 mt-3 d-flex justify-content-center">
                             <button type="submit" class="btn btn-lg">Submit</button>
                         </div>
                     </div>
-                </div>
+            </div>
             </form>
         </div>
     </div>
 
-    <footer class="footer bg-dark" id="footer">
-        <div class="container-fluid">
-            <div class="row text-center">
-                <div class="p-5">
-                    <h3>Contact Info</h3>
-                    <hr class="divider my-4">
-                    <ul class="list-unstyled">
-                        <li><i class="fas fa-phone pr-3 pb-2 custom-align-middle"></i>02890111111</li>
-                        <li><i class="fas fa-envelope pr-3 custom-align-middle"></i>info@email.com</li>
-                    </ul>
-                    <div>
-                        <a href="#"><i class="fab fa-facebook fa-2x pr-3"></i></a>
-                        <a href="#"><i class="fab fa-twitter fa-2x pr-3"></i></a>
-                        <a href="#"><i class="fab fa-tripadvisor fa-2x pr-3"></i></a>
-                        <a href="#"><i class="fab fa-google-plus fa-2x"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <div class="copyright py-2 px-3 px-lg-5 bg-dark">
+    <footer class="copyright py-2 px-3 px-lg-5 bg-dark">
         <div class="container-fluid">
             <div class="row custom-flex-between">
                 <span class="pr-5">&copy; Cab Company 2020</span>
                 <a href="#">Website by Liam McAllister</a>
             </div>
         </div>
-    </div>
+    </footer>
 
     <a href="#" id="back-to-top" class="btn btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
 
