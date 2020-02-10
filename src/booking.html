@@ -22,7 +22,7 @@
 <body>
 
     <div class="fixed-top" id="navbar">
-        <nav class="navbar social px-3 px-lg-5" id="first">
+        <nav class="navbar social px-3 px-lg-5 bg-dark" id="first">
             <div class="social-icons">
                 <a href="#"><i class="fab fa-facebook pr-2"></i></a>
                 <a href="#"><i class="fab fa-twitter pr-2"></i></a>
@@ -34,8 +34,8 @@
                 <span class="pl-4"><i class="fas fa-envelope pr-2"></i>info@email.com</span>
             </div>
         </nav>
-        <nav class="navbar navbar-expand-md px-3 px-lg-5" id="second">
-            <a href="index.html" class="navbar-brand">Company Logo</a>
+        <nav class="navbar navbar-expand-md px-3 px-lg-5 bg-dark" id="second">
+            <a href="index.html" class="navbar-brand font-weight-bold">Black Cab Tours</a>
             <button id="navbar-toggler" class="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
                 data-target="#collapsingNavbar" aria-controls="collapsingNavbar" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -68,21 +68,21 @@
         </div>
         <div class="row mt-5">
             <div class="col-12">
-                <form class="mx-auto">
+                <form action="booking.php" method="post" class="mx-auto">
                     <div class="form-group row mb-0">
                         <div class="col-sm-6 mt-3">
                             <label for="firstName">First Name *</label>
-                            <input type="text" class="form-control rounded-0" id="firstName" required>
+                            <input type="text" class="form-control rounded-0" id="firstName" name="firstName" required>
                         </div>
                         <div class="col-sm-6 mt-3">
                             <label for="lastName">Last Name *</label>
-                            <input type="text" class="form-control rounded-0" id="lastName" required>
+                            <input type="text" class="form-control rounded-0" id="lastName" name="lastName" required>
                         </div>
                     </div>
                     <div class="form-group row mb-0">
                         <div class="col-sm-6 mt-3">
                             <label for="email">Email *</label>
-                            <input type="email" class="form-control rounded-0" id="email" required>
+                            <input type="email" class="form-control rounded-0" id="email" name="emailAddress" required>
                         </div>
                         <div class="col-sm-6 mt-3">
                             <label for="phone">Phone *</label>
@@ -141,9 +141,11 @@
 
     <footer class="copyright py-2 px-3 px-lg-5 bg-dark">
         <div class="container-fluid">
-            <div class="row custom-flex-between">
-                <span class="pr-5">&copy; Cab Company 2020</span>
-                <a href="#">Website by Liam McAllister</a>
+            <div class="row">
+                <ul class="list-unstyled m-0">
+                    <li>&copy; Cab Company 2020</li>
+                    <li><a href="#">Website by Liam McAllister</a></li>
+                </ul>
             </div>
         </div>
     </footer>
