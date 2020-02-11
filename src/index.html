@@ -22,14 +22,14 @@
 <body>
 
     <div class="fixed-top" id="navbar">
-        <nav class="navbar social px-3 px-lg-5 bg-dark" id="first">
+        <nav class="navbar px-3 px-lg-5 custom-bg-dark" id="first">
             <div class="social-icons">
                 <a href="#"><i class="fab fa-facebook pr-2"></i></a>
                 <a href="#"><i class="fab fa-twitter pr-2"></i></a>
                 <a href="#"><i class="fab fa-tripadvisor pr-2"></i></a>
                 <a href="#"><i class="fab fa-google-plus"></i></a>
             </div>
-            <div class="ml-auto info-center">
+            <div>
                 <span><i class="fas fa-phone pr-2"></i>02890111111</span>
                 <span class="pl-4"><i class="fas fa-envelope pr-2"></i>info@email.com</span>
             </div>
@@ -43,11 +43,11 @@
             </button>
             <div class="navbar-collapse collapse text-center" id="collapsingNavbar">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#company-info" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="#tours" class="nav-link">Tours</a></li>
+                    <li class="nav-item"> <a href="#why-us" class="nav-link">Why Us?</a></li>
                     <li class="nav-item"><a href="#reviews" class="nav-link">Reviews</a></li>
-                    <li class="nav-item"> <a href="#footer" class="nav-link">Contact</a></li>
                 </ul>
                 <div class="ml-auto">
                     <a href="booking.html" class="btn btn-lg">Book Now</a>
@@ -56,15 +56,15 @@
         </nav>
     </div>
 
-    <div class="jumbotron jumbotron-fluid m-0" id="home">
+    <div class="jumbotron jumbotron-fluid m-0">
         <div class="container-fluid h-100">
             <div class="row h-100 align-items-center justify-content-center text-center">
                 <div class="col-lg-10 align-self-end">
-                    <h1 class="text-uppercase font-weight-bold">Some Text</h1 class="text-uppercase">
-                    <hr class="divider my-4">
+                    <h1 class="text-uppercase font-weight-bold">Some Text</h1>
+                    <hr class="divider my-4" />
                 </div>
                 <div class="col-lg-8 align-self-baseline">
-                    <p class="lead mb-5 jumbo-para-margin">Lorem ipsum dolor sit, amet consectetur adipisicing
+                    <p class="lead mb-5 jumbotron-margin">Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. Eum provident hic dicta ratione, eius voluptates natus
                         molestiae reprehenderit ea. Cum rerum tenetur officiis similique
                         quis, aspernatur natus facilis iste sed!</p>
@@ -74,78 +74,80 @@
         </div>
     </div>
 
-    <div class="company-info mx-md-4 my-5 text-dark" id="company-info">
-        <div class="container-fluid">
-            <div class="row">
-                <div
-                    class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center mb-5 mb-md-0">
-                    <h3>A little bit about us...</h3>
-                    <hr class="divider my-4">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Eum provident hic dicta ratione, eius voluptates natus
-                        molestiae reprehenderit ea. Cum rerum tenetur officiis similique
-                        quis, aspernatur natus facilis iste sed!</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Eum provident hic dicta ratione, eius voluptates natus
-                        molestiae reprehenderit ea. Cum rerum tenetur officiis similique
-                        quis, aspernatur natus facilis iste sed!</p>
-                </div>
-                <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/t_aChO_kZWY"
-                            allowfullscreen></iframe>
+    <div id="about">
+        <div class="mx-md-4 my-5 text-dark">
+            <div class="container-fluid">
+                <div class="row">
+                    <div
+                        class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center mb-5 mb-md-0">
+                        <h3>A little bit about us...</h3>
+                        <hr class="divider my-4" />
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Eum provident hic dicta ratione, eius voluptates natus
+                            molestiae reprehenderit ea. Cum rerum tenetur officiis similique
+                            quis, aspernatur natus facilis iste sed!</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Eum provident hic dicta ratione, eius voluptates natus
+                            molestiae reprehenderit ea. Cum rerum tenetur officiis similique
+                            quis, aspernatur natus facilis iste sed!</p>
+                    </div>
+                    <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/t_aChO_kZWY"
+                                allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="tours" id="tours">
+    <div id="tours">
         <div class="container-fluid p-0 text-center text-white">
             <div class="row no-gutters">
                 <div class="col-lg-4 col-sm-6">
-                    <a class="tour-card" href="tours.html">
-                        <img src="/src/images/jumbotron-background.jpg" alt="" class="img-fluid" />
+                    <a class="tour-card" href="tours.html#tourOne">
+                        <img src="/src/images/tour-one.jpg" alt="" class="img-fluid" />
                         <div class="tour-caption">
                             <span>Tour Type 1</span>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="tour-card" href="tours.html">
-                        <img src="/src/images/jumbotron-background.jpg" alt="" class="img-fluid" />
+                    <a class="tour-card" href="tours.html#tourTwo">
+                        <img src="/src/images/tour-two.jpg" alt="" class="img-fluid" />
                         <div class="tour-caption">
                             <span>Tour Type 2</span>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="tour-card" href="tours.html">
-                        <img src="/src/images/jumbotron-background.jpg" alt="" class="img-fluid" />
+                    <a class="tour-card" href="tours.html#tourThree">
+                        <img src="/src/images/tour-three.jpg" alt="" class="img-fluid" />
                         <div class="tour-caption">
                             <span>Tour Type 3</span>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="tour-card" href="tours.html">
-                        <img src="/src/images/jumbotron-background.jpg" alt="" class="img-fluid" />
+                    <a class="tour-card" href="tours.html#tourFour">
+                        <img src="/src/images/tour-four.jpg" alt="" class="img-fluid" />
                         <div class="tour-caption">
                             <span>Tour Type 4</span>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="tour-card" href="tours.html">
-                        <img src="/src/images/jumbotron-background.jpg" alt="" class="img-fluid" />
+                    <a class="tour-card" href="tours.html#tourFive">
+                        <img src="/src/images/tour-five.jpg" alt="" class="img-fluid" />
                         <div class="tour-caption">
                             <span>Tour Type 5</span>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="tour-card" href="tours.html">
-                        <img src="/src/images/jumbotron-background.jpg" alt="" class="img-fluid" />
+                    <a class="tour-card" href="tours.html#tourSix">
+                        <img src="/src/images/tour-six.jpg" alt="" class="img-fluid" />
                         <div class="tour-caption">
                             <span>Tour Type 6</span>
                         </div>
@@ -155,37 +157,39 @@
         </div>
     </div>
 
-    <div class="container-fluid my-5 text-dark text-center why-us">
-        <div class="row justify-content-center">
-            <div class="col-12">
-                <h3>Why Us?</h3>
-                <hr class="divider my-4">
+    <div id="why-us">
+        <div class="container-fluid my-5 text-dark text-center why-us">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <h3>Why Us?</h3>
+                    <hr class="divider my-4" />
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 col-lg-4">
-                <i class="far fa-smile fa-5x mb-3 red-icons"></i>
-                <p>Friendly Drivers</p>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-                <i class="fas fa-book fa-5x mb-3 red-icons"></i>
-                <p>Extensive Local Knowledge</p>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-                <i class="fas fa-taxi fa-5x mb-3 red-icons"></i>
-                <p>Tour In Comfort</p>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-                <i class="fas fa-pound-sign fa-5x mb-3 red-icons"></i>
-                <p>Price Guarantee</p>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-                <i class="fas fa-wheelchair fa-5x mb-3 red-icons"></i>
-                <p>Wheelchair Accessable</p>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-                <i class="fas fa-map-pin fa-5x mb-3 red-icons"></i>
-                <p>Pickup From Anywhere In Belfast</p>
+            <div class="row">
+                <div class="col-sm-6 col-lg-4 custom-margin-bottom">
+                    <i class="far fa-smile fa-5x mb-3 red-icons"></i>
+                    <p>Friendly Drivers</p>
+                </div>
+                <div class="col-sm-6 col-lg-4 custom-margin-bottom">
+                    <i class="fas fa-book fa-5x mb-3 red-icons"></i>
+                    <p>Extensive Local Knowledge</p>
+                </div>
+                <div class="col-sm-6 col-lg-4 custom-margin-bottom">
+                    <i class="fas fa-taxi fa-5x mb-3 red-icons"></i>
+                    <p>Tour In Comfort</p>
+                </div>
+                <div class="col-sm-6 col-lg-4 custom-margin-bottom">
+                    <i class="fas fa-pound-sign fa-5x mb-3 red-icons"></i>
+                    <p>Price Guarantee</p>
+                </div>
+                <div class="col-sm-6 col-lg-4 custom-margin-bottom">
+                    <i class="fas fa-wheelchair fa-5x mb-3 red-icons"></i>
+                    <p>Wheelchair Accessable</p>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <i class="fas fa-map-pin fa-5x mb-3 red-icons"></i>
+                    <p>Pickup From Anywhere In Belfast</p>
+                </div>
             </div>
         </div>
     </div>
@@ -195,7 +199,7 @@
             <div class="row">
                 <div class="col-12">
                     <h3 class="text-center mt-5">Reviews</h3>
-                    <hr class="my-4 divider white-divider">
+                    <hr class="my-4 divider white-divider" />
                     <div id="demo" class="carousel slide" data-ride="carousel">
                         <!-- The slideshow -->
                         <div class="carousel-inner text-center">

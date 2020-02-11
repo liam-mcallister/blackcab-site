@@ -18,10 +18,21 @@
       3.5.1. Carousel Inner
       3.5.2. Carousel Indicators
 4. Tours Page
+    4.1. Custom Tour Width
 5. Booking Page
-6. Footer
-7. Components
-8. Media Queries
+6. 404 Page
+    6.1. Error 404 Height
+7. Footer
+8. Components
+    8.1. Links
+    8.2. Buttons
+    8.3. Back To Top Button
+    8.4. Forms
+    8.5. Inputs
+    8.6. Divider
+    8.7. Red Icons
+    8.8. Custom Spacer
+9. Media Queries
 
 */
 /*---------------------------------- 1. General ----*/
@@ -39,6 +50,10 @@ body {
 }
 
 /*------------------------------- 2. Navigation ----*/
+.custom-bg-dark {
+  background: #252525;
+}
+
 /*-- 2.1. Navbar Toggler --*/
 .navbar-toggler,
 .navbar-toggler:focus,
@@ -63,15 +78,7 @@ body {
 }
 
 /*-- 3.2. About --*/
-.company-info {
-  background: #ffffff;
-}
-
 /*-- 3.3. Tours --*/
-.tours {
-  background: #ffffff;
-}
-
 /*-- 3.3.1. Tour Card --*/
 .tour-card {
   position: relative;
@@ -109,19 +116,19 @@ body {
   max-width: 1500px;
 }
 
-/*-- 3.4. Reviews --*/
+/*-- 3.5. Reviews --*/
 .reviews {
   background: #f15152;
   color: #ffffff;
 }
 
-/*-- 3.4.1. Carousel Inner --*/
+/*-- 3.5.1. Carousel Inner --*/
 .carousel-inner {
   margin-bottom: 5rem;
   height: 200px;
 }
 
-/*-- 3.4.2. Carousel Indicators --*/
+/*-- 3.5.2. Carousel Indicators --*/
 .carousel-indicators {
   bottom: -50px;
 }
@@ -133,21 +140,21 @@ body {
 }
 
 /*------------------------------- 4. Tours Page ----*/
-.tours {
-  background: #f15152;
+/*-- 4.1. Custom Tour Width --*/
+.custom-tour-width {
+  max-width: 1200px;
 }
 
 /*----------------------------- 5. Booking Page ----*/
-/*----------------------------------- 6. Footer ----*/
-/*------------------------------- 7. Components ----*/
-.back-to-top {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  display: none;
+/*----------------------------- 6. Booking Page ----*/
+/*-- 6.1. Error 404 Height --*/
+.error-404-height {
+  height: calc(100vh - 160px);
 }
 
-/* LINKS */
+/*----------------------------------- 7. Footer ----*/
+/*------------------------------- 8. Components ----*/
+/*-- 8.1. Links --*/
 a {
   color: #ffffff;
 }
@@ -161,7 +168,7 @@ a:hover {
   color: #f15152;
 }
 
-/* BUTTONS */
+/*-- 8.2. Buttons --*/
 .btn {
   background: #f15152;
   color: #ffffff;
@@ -177,7 +184,20 @@ a:hover {
           box-shadow: none;
 }
 
-/* INPUTS */
+/*-- 8.3. Back To Top Button --*/
+.back-to-top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: none;
+}
+
+/*-- 8.4. Forms --*/
+form {
+  max-width: 800px;
+}
+
+/*-- 8.5. Inputs --*/
 .form-control:focus,
 .form-control:active {
   outline: none;
@@ -185,7 +205,7 @@ a:hover {
           box-shadow: none;
 }
 
-/* DIVIDER */
+/*-- 8.6. Divider --*/
 .divider, .divider.white-divider {
   width: 3.25rem;
   max-width: 3.25rem;
@@ -197,47 +217,28 @@ a:hover {
   border-color: #ffffff;
 }
 
-/* CONTACT ICONS */
-.custom-align-middle {
-  vertical-align: middle;
-}
-
-/*-- Red Icons --*/
+/*-- 8.7. Red Icons --*/
 .red-icons {
   color: #f15152;
 }
 
-/* FORM */
-form {
-  max-width: 800px;
-}
-
-/*-- Custom Spacer --*/
+/*-- 8.8. Custom Spacer --*/
 .custom-spacer {
   height: 96px;
 }
 
-.custom-tour-width {
-  max-width: 1200px;
-}
-
-/*-- Error 404 --*/
-.error-404 {
-  height: calc(100vh - 160px);
-}
-
-/*---------------------------- 8. Media Queries ----*/
+/*---------------------------- 9. Media Queries ----*/
 @media (max-width: 575px) {
   .social-icons {
     display: none;
   }
-  .info-center {
-    margin: 0 auto;
+  .custom-margin-bottom {
+    margin-bottom: 2rem;
   }
 }
 
 @media (min-width: 576px) {
-  .jumbo-para-margin {
+  .jumbotron-margin {
     margin-left: 4rem;
     margin-right: 4rem;
   }
