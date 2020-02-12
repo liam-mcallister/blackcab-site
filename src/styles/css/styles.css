@@ -102,7 +102,7 @@ body {
   bottom: 0;
   opacity: 0;
   color: #ffffff;
-  background: rgba(241, 81, 82, 0.9);
+  background: rgba(223, 46, 46, 0.9);
   -webkit-transition: opacity 0.25s ease;
   transition: opacity 0.25s ease;
 }
@@ -118,7 +118,7 @@ body {
 
 /*-- 3.5. Reviews --*/
 .reviews {
-  background: #f15152;
+  background: #df2e2e;
   color: #ffffff;
 }
 
@@ -160,17 +160,17 @@ a {
 }
 
 a:hover {
-  color: #f15152;
+  color: #df2e2e;
   text-decoration: none;
 }
 
 .active-link {
-  color: #f15152;
+  color: #df2e2e;
 }
 
 /*-- 8.2. Buttons --*/
 .btn {
-  background: #f15152;
+  background: #df2e2e;
   color: #ffffff;
   font-size: 16px;
   border: none;
@@ -210,7 +210,7 @@ form {
   width: 3.25rem;
   max-width: 3.25rem;
   border-width: 0.2rem;
-  border-color: #f15152;
+  border-color: #df2e2e;
 }
 
 .white-divider.divider {
@@ -219,7 +219,7 @@ form {
 
 /*-- 8.7. Red Icons --*/
 .red-icons {
-  color: #f15152;
+  color: #df2e2e;
 }
 
 /*-- 8.8. Custom Spacer --*/

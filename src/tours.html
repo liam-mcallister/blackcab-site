@@ -3,18 +3,39 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js">
+<html class="no-js" lang="en-GB">
 <!--<![endif]-->
 
 <head>
+    <!--METADATA-->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Black Cab Tours | Belfast</title>
-    <meta name="description" content="" />
+    <title>Tours | Black Cab Tours</title>
+    <meta name="author" content="Liam McAllister">
+    <meta name="keywords" content="Black Cab, Belfast, Tours, Taxi" />
+    <meta name="description" content="Belfast's best Black Cab tour - see Northern Ireland's capital city in style!" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--OPENGRAPH METADATA-->
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:title" content="Tours | Black Cab Tours" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description"
+        content="Belfast's best Black Cab tour - see Northern Ireland's capital city in style!">
+    <meta property="og:url" content="http://www.fakeaddress.com" />
+    <meta property="og:site_name" content="Black Cab Tours" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:type" content="image/jpg">
+    <!--TWITTER METADATA-->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:title" content="Tours | Black Cab Tours" />
+    <meta property="og:description"
+        content="Belfast's best Black Cab tour - see Northern Ireland's capital city in style!" />
+    <meta property="og:url" content="http://www.fakeaddress.com" />
+    <meta name="twitter:site" content="@blackcabtours" />
+    <meta property="og:image" content="" />
+    <meta name="twitter:creator" content="@liammcallister" />
     <!--STYLESHEETS-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css" />
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="styles/css/styles.css" />
 </head>
@@ -22,19 +43,19 @@
 <body>
 
     <div class="fixed-top" id="navbar">
-        <nav class="navbar px-3 px-lg-5 custom-bg-dark" id="first">
+        <nav class="navbar px-3 px-lg-5 custom-bg-dark" id="first" aria-label="first">
             <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook pr-2"></i></a>
-                <a href="#"><i class="fab fa-twitter pr-2"></i></a>
-                <a href="#"><i class="fab fa-tripadvisor pr-2"></i></a>
-                <a href="#"><i class="fab fa-google-plus"></i></a>
+                <a href="#" aria-label="facebook"><i class="fab fa-facebook pr-2"></i></a>
+                <a href="#" aria-label="twitter"><i class="fab fa-twitter pr-2"></i></a>
+                <a href="#" aria-label="tripadvisor"><i class="fab fa-tripadvisor pr-2"></i></a>
+                <a href="#" aria-label="googleplus"><i class="fab fa-google-plus"></i></a>
             </div>
             <div>
                 <span><i class="fas fa-phone pr-2"></i>02890111111</span>
                 <span class="pl-4"><i class="fas fa-envelope pr-2"></i>info@email.com</span>
             </div>
         </nav>
-        <nav class="navbar navbar-expand-md px-3 px-lg-5 bg-dark" id="second">
+        <nav class="navbar navbar-expand-md px-3 px-lg-5 bg-dark" id="second" aria-label="second">
             <a href="index.html" class="navbar-brand font-weight-bold">Black Cab Tours</a>
             <button id="navbar-toggler" class="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
                 data-target="#collapsingNavbar" aria-controls="collapsingNavbar" aria-expanded="false"
@@ -56,100 +77,110 @@
         </nav>
     </div>
 
-    <div class="custom-spacer"></div>
+    <main>
+        <div class="custom-spacer"></div>
 
-    <div class="container-fluid p-0 custom-tour-width">
-        <div class="row m-3 m-sm-5" id="tourOne">
-            <div class="col-md-7 p-0 d-flex flex-column justify-content-center align-items-center">
-                <img src="/src/images/tour-one.jpg" alt="tour one" class="img-fluid">
+        <div class="container-fluid p-0 my-5 custom-tour-width">
+            <div class="row">
+                <div class="col-12 text-dark text-center">
+                    <h1>Our Tours</h1>
+                    <hr class="divider my-4" />
+                </div>
             </div>
-            <div class="col-md-5 text-dark d-flex flex-column justify-content-center">
-                <h3 class="mt-4 mt-md-0">Tour One</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sunt possimus dolorum eius ex odit expedita quam, laudantium quos,
-                    placeat, perferendis doloribus ipsa est magni obcaecati architecto?
-                    Nesciunt totam ipsam delectus!</p>
-                <p><span class="font-weight-bold">Duration:</span> 1hr</p>
-                <p><span class="font-weight-bold">Price:</span> £50.00</p>
-                <a href="booking.html" class="btn btn-lg">Book Now</a>
+            <div class="row m-3 m-sm-5" id="tourOne">
+                <div class="col-md-7 p-0 d-flex flex-column justify-content-center align-items-center">
+                    <img src="/src/images/tour-one.jpg" alt="tour one" class="img-fluid">
+                </div>
+                <div class="col-md-5 text-dark d-flex flex-column justify-content-center">
+                    <h2 class="mt-4 mt-md-0">Tour One</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sunt possimus dolorum eius ex odit expedita quam, laudantium quos,
+                        placeat, perferendis doloribus ipsa est magni obcaecati architecto?
+                        Nesciunt totam ipsam delectus!</p>
+                    <p><span class="font-weight-bold">Duration:</span> 1hr</p>
+                    <p><span class="font-weight-bold">Price:</span> £50.00</p>
+                    <a href="booking.html" class="btn btn-lg">Book Now</a>
+                </div>
+            </div>
+            <div class="row row m-3 mt-5 m-sm-5" id="tourTwo">
+                <div class="col-md-7 p-0 d-flex flex-column justify-content-center align-items-center">
+                    <img src="/src/images/tour-two.jpg" alt="tour one" class="img-fluid">
+                </div>
+                <div class="col-md-5 text-dark d-flex flex-column justify-content-center">
+                    <h2 class="mt-4 mt-md-0">Tour Two</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sunt possimus dolorum eius ex odit expedita quam, laudantium quos,
+                        placeat, perferendis doloribus ipsa est magni obcaecati architecto?
+                        Nesciunt totam ipsam delectus!</p>
+                    <p><span class="font-weight-bold">Duration:</span> 1hr</p>
+                    <p><span class="font-weight-bold">Price:</span> £50.00</p>
+                    <a href="booking.html" class="btn btn-lg">Book Now</a>
+                </div>
+            </div>
+            <div class="row row m-3 mt-5 m-sm-5" id="tourThree">
+                <div class="col-md-7 p-0 d-flex flex-column justify-content-center align-items-center">
+                    <img src="/src/images/tour-three.jpg" alt="tour one" class="img-fluid">
+                </div>
+                <div class="col-md-5 text-dark d-flex flex-column justify-content-center">
+                    <h2 class="mt-4 mt-md-0">Tour Three</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sunt possimus dolorum eius ex odit expedita quam, laudantium quos,
+                        placeat, perferendis doloribus ipsa est magni obcaecati architecto?
+                        Nesciunt totam ipsam delectus!</p>
+                    <p><span class="font-weight-bold">Duration:</span> 1hr</p>
+                    <p><span class="font-weight-bold">Price:</span> £50.00</p>
+                    <a href="booking.html" class="btn btn-lg">Book Now</a>
+                </div>
+            </div>
+            <div class="row row m-3 mt-5 m-sm-5" id="tourFour">
+                <div class="col-md-7 p-0 d-flex flex-column justify-content-center align-items-center">
+                    <img src="/src/images/tour-four.jpg" alt="tour one" class="img-fluid">
+                </div>
+                <div class="col-md-5 text-dark d-flex flex-column justify-content-center">
+                    <h2 class="mt-4 mt-md-0">Tour Four</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sunt possimus dolorum eius ex odit expedita quam, laudantium quos,
+                        placeat, perferendis doloribus ipsa est magni obcaecati architecto?
+                        Nesciunt totam ipsam delectus!</p>
+                    <p><span class="font-weight-bold">Duration:</span> 1hr</p>
+                    <p><span class="font-weight-bold">Price:</span> £50.00</p>
+                    <a href="booking.html" class="btn btn-lg">Book Now</a>
+                </div>
+            </div>
+            <div class="row row m-3 mt-5 m-sm-5" id="tourFive">
+                <div class="col-md-7 p-0 d-flex flex-column justify-content-center align-items-center">
+                    <img src="/src/images/tour-five.jpg" alt="tour one" class="img-fluid">
+                </div>
+                <div class="col-md-5 text-dark d-flex flex-column justify-content-center">
+                    <h2 class="mt-4 mt-md-0">Tour Five</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sunt possimus dolorum eius ex odit expedita quam, laudantium quos,
+                        placeat, perferendis doloribus ipsa est magni obcaecati architecto?
+                        Nesciunt totam ipsam delectus!</p>
+                    <p><span class="font-weight-bold">Duration:</span> 1hr</p>
+                    <p><span class="font-weight-bold">Price:</span> £50.00</p>
+                    <a href="booking.html" class="btn btn-lg">Book Now</a>
+                </div>
+            </div>
+            <div class="row row m-3 mt-5 m-sm-5" id="tourSix">
+                <div class="col-md-7 p-0 d-flex flex-column justify-content-center align-items-center">
+                    <img src="/src/images/tour-six.jpg" alt="tour one" class="img-fluid">
+                </div>
+                <div class="col-md-5 text-dark d-flex flex-column justify-content-center">
+                    <h2 class="mt-4 mt-md-0">Tour Six</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sunt possimus dolorum eius ex odit expedita quam, laudantium quos,
+                        placeat, perferendis doloribus ipsa est magni obcaecati architecto?
+                        Nesciunt totam ipsam delectus!</p>
+                    <p><span class="font-weight-bold">Duration:</span> 1hr</p>
+                    <p><span class="font-weight-bold">Price:</span> £50.00</p>
+                    <a href="booking.html" class="btn btn-lg">Book Now</a>
+                </div>
             </div>
         </div>
-        <div class="row row m-3 mt-5 m-sm-5" id="tourTwo">
-            <div class="col-md-7 p-0 d-flex flex-column justify-content-center align-items-center">
-                <img src="/src/images/tour-two.jpg" alt="tour one" class="img-fluid">
-            </div>
-            <div class="col-md-5 text-dark d-flex flex-column justify-content-center">
-                <h3 class="mt-4 mt-md-0">Tour Two</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sunt possimus dolorum eius ex odit expedita quam, laudantium quos,
-                    placeat, perferendis doloribus ipsa est magni obcaecati architecto?
-                    Nesciunt totam ipsam delectus!</p>
-                <p><span class="font-weight-bold">Duration:</span> 1hr</p>
-                <p><span class="font-weight-bold">Price:</span> £50.00</p>
-                <a href="booking.html" class="btn btn-lg">Book Now</a>
-            </div>
-        </div>
-        <div class="row row m-3 mt-5 m-sm-5" id="tourThree">
-            <div class="col-md-7 p-0 d-flex flex-column justify-content-center align-items-center">
-                <img src="/src/images/tour-three.jpg" alt="tour one" class="img-fluid">
-            </div>
-            <div class="col-md-5 text-dark d-flex flex-column justify-content-center">
-                <h3 class="mt-4 mt-md-0">Tour Three</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sunt possimus dolorum eius ex odit expedita quam, laudantium quos,
-                    placeat, perferendis doloribus ipsa est magni obcaecati architecto?
-                    Nesciunt totam ipsam delectus!</p>
-                <p><span class="font-weight-bold">Duration:</span> 1hr</p>
-                <p><span class="font-weight-bold">Price:</span> £50.00</p>
-                <a href="booking.html" class="btn btn-lg">Book Now</a>
-            </div>
-        </div>
-        <div class="row row m-3 mt-5 m-sm-5" id="tourFour">
-            <div class="col-md-7 p-0 d-flex flex-column justify-content-center align-items-center">
-                <img src="/src/images/tour-four.jpg" alt="tour one" class="img-fluid">
-            </div>
-            <div class="col-md-5 text-dark d-flex flex-column justify-content-center">
-                <h3 class="mt-4 mt-md-0">Tour Four</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sunt possimus dolorum eius ex odit expedita quam, laudantium quos,
-                    placeat, perferendis doloribus ipsa est magni obcaecati architecto?
-                    Nesciunt totam ipsam delectus!</p>
-                <p><span class="font-weight-bold">Duration:</span> 1hr</p>
-                <p><span class="font-weight-bold">Price:</span> £50.00</p>
-                <a href="booking.html" class="btn btn-lg">Book Now</a>
-            </div>
-        </div>
-        <div class="row row m-3 mt-5 m-sm-5" id="tourFive">
-            <div class="col-md-7 p-0 d-flex flex-column justify-content-center align-items-center">
-                <img src="/src/images/tour-five.jpg" alt="tour one" class="img-fluid">
-            </div>
-            <div class="col-md-5 text-dark d-flex flex-column justify-content-center">
-                <h3 class="mt-4 mt-md-0">Tour Five</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sunt possimus dolorum eius ex odit expedita quam, laudantium quos,
-                    placeat, perferendis doloribus ipsa est magni obcaecati architecto?
-                    Nesciunt totam ipsam delectus!</p>
-                <p><span class="font-weight-bold">Duration:</span> 1hr</p>
-                <p><span class="font-weight-bold">Price:</span> £50.00</p>
-                <a href="booking.html" class="btn btn-lg">Book Now</a>
-            </div>
-        </div>
-        <div class="row row m-3 mt-5 m-sm-5" id="tourSix">
-            <div class="col-md-7 p-0 d-flex flex-column justify-content-center align-items-center">
-                <img src="/src/images/tour-six.jpg" alt="tour one" class="img-fluid">
-            </div>
-            <div class="col-md-5 text-dark d-flex flex-column justify-content-center">
-                <h3 class="mt-4 mt-md-0">Tour Six</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sunt possimus dolorum eius ex odit expedita quam, laudantium quos,
-                    placeat, perferendis doloribus ipsa est magni obcaecati architecto?
-                    Nesciunt totam ipsam delectus!</p>
-                <p><span class="font-weight-bold">Duration:</span> 1hr</p>
-                <p><span class="font-weight-bold">Price:</span> £50.00</p>
-                <a href="booking.html" class="btn btn-lg">Book Now</a>
-            </div>
-        </div>
-    </div>
+
+        <a href="#" id="back-to-top" class="btn btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
+    </main>
 
     <footer class="copyright py-2 px-3 px-lg-5 bg-dark">
         <div class="container-fluid">
@@ -161,8 +192,6 @@
             </div>
         </div>
     </footer>
-
-    <a href="#" id="back-to-top" class="btn btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
 
     <!--[if lt IE 7]>
     <p class="browsehappy">

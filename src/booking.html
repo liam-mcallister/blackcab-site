@@ -3,18 +3,39 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js">
+<html class="no-js" lang="en-GB">
 <!--<![endif]-->
 
 <head>
+    <!--METADATA-->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Black Cab Tours | Belfast</title>
-    <meta name="description" content="" />
+    <title>Book a Tour | Black Cab Tours</title>
+    <meta name="author" content="Liam McAllister">
+    <meta name="keywords" content="Black Cab, Belfast, Tours, Taxi" />
+    <meta name="description" content="Belfast's best Black Cab tour - see Northern Ireland's capital city in style!" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--OPENGRAPH METADATA-->
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:title" content="Book A Tour | Black Cab Tours" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description"
+        content="Belfast's best Black Cab tour - see Northern Ireland's capital city in style!">
+    <meta property="og:url" content="http://www.fakeaddress.com" />
+    <meta property="og:site_name" content="Black Cab Tours" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:type" content="image/jpg">
+    <!--TWITTER METADATA-->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:title" content="Book A Tour | Black Cab Tours" />
+    <meta property="og:description"
+        content="Belfast's best Black Cab tour - see Northern Ireland's capital city in style!" />
+    <meta property="og:url" content="http://www.fakeaddress.com" />
+    <meta name="twitter:site" content="@blackcabtours" />
+    <meta property="og:image" content="" />
+    <meta name="twitter:creator" content="@liammcallister" />
     <!--STYLESHEETS-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css" />
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="styles/css/styles.css" />
 </head>
@@ -22,7 +43,7 @@
 <body>
 
     <div class="fixed-top" id="navbar">
-        <nav class="navbar px-3 px-lg-5 custom-bg-dark" id="first">
+        <nav class="navbar px-3 px-lg-5 custom-bg-dark" id="first" aria-label="first">
             <div class="social-icons">
                 <a href="#"><i class="fab fa-facebook pr-2"></i></a>
                 <a href="#"><i class="fab fa-twitter pr-2"></i></a>
@@ -34,7 +55,7 @@
                 <span class="pl-4"><i class="fas fa-envelope pr-2"></i>info@email.com</span>
             </div>
         </nav>
-        <nav class="navbar navbar-expand-md px-3 px-lg-5 bg-dark" id="second">
+        <nav class="navbar navbar-expand-md px-3 px-lg-5 bg-dark" id="second" aria-label="second">
             <a href="index.html" class="navbar-brand font-weight-bold">Black Cab Tours</a>
             <button id="navbar-toggler" class="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
                 data-target="#collapsingNavbar" aria-controls="collapsingNavbar" aria-expanded="false"
@@ -56,88 +77,96 @@
         </nav>
     </div>
 
-    <div class="custom-spacer"></div>
+    <main>
+        <div class="custom-spacer"></div>
 
-    <div class="container-fluid py-5 text-dark">
-        <div class="row text-center">
-            <div class="col-12">
-                <h3>Book a Tour</h3>
-                <hr class="divider my-4">
-                <small>* Required Field</small>
+        <div class="container-fluid py-5 text-dark">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h1>Book a Tour</h1>
+                    <hr class="divider my-4">
+                    <small>* Required Field</small>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <form action="booking.php" method="post" class="mx-auto">
+                        <div class="form-group row mb-0">
+                            <div class="col-sm-6 mt-3">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" class="form-control rounded-0" id="firstName" name="firstName"
+                                    required>
+                            </div>
+                            <div class="col-sm-6 mt-3">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" class="form-control rounded-0" id="lastName" name="lastName"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="form-group row mb-0">
+                            <div class="col-sm-6 mt-3">
+                                <label for="email">Email *</label>
+                                <input type="email" class="form-control rounded-0" id="email" name="emailAddress"
+                                    required>
+                            </div>
+                            <div class="col-sm-6 mt-3">
+                                <label for="phone">Phone *</label>
+                                <input type="tel" class="form-control rounded-0" id="phone" required>
+                            </div>
+                        </div>
+                        <div class="form-group row mb-0">
+                            <div class="col-sm-6 mt-3">
+                                <label for="tourType">Select Tour: *</label>
+                                <select class="form-control rounded-0" id="tourType" name="Tour Type" required>
+                                    <option value="">Please Select</option>
+                                    <option value="tourOne">Tour Type 1</option>
+                                    <option value="tourTwo">Tour Type 2</option>
+                                    <option value="tourThree">Tour Type 3</option>
+                                    <option value="tourFour">Tour Type 4</option>
+                                    <option value="tourFive">Tour Type 5</option>
+                                    <option value="tourSix">Tour Type 6</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-6 mt-3">
+                                <label for="peopleNum">Number of People * (1 to 5)</label>
+                                <input type="number" class="form-control rounded-0" id="peopleNum" min="1" max="5"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="form-group row mb-0">
+                            <div class="col-12 mt-3">
+                                <label for="pickupAddress">Pickup Address *</label>
+                                <input type="text" class="form-control rounded-0" id="pickupAddress" required>
+                            </div>
+                        </div>
+                        <div class="form-group row mb-0">
+                            <div class="col-sm-6 mt-3">
+                                <label for="tourDate">Pick a Date: *</label>
+                                <input type="date" class="form-control rounded-0" id="tourDate" required>
+                            </div>
+                            <div class="col-sm-6 mt-3">
+                                <label for="tourTime">Pick a Time: *</label>
+                                <input type="time" class="form-control rounded-0" id="tourTime" required>
+                            </div>
+                        </div>
+                        <div class="form-group row mb-0">
+                            <div class="col-12 mt-3">
+                                <label for="message">Message</label>
+                                <textarea id="message" rows="10" class="form-control rounded-0"></textarea>
+                            </div>
+                        </div>
+                        <div class="row mb-0">
+                            <div class="col-12 mt-3 d-flex justify-content-center">
+                                <button type="submit" class="btn btn-lg">Submit</button>
+                            </div>
+                        </div>
+                </div>
+                </form>
             </div>
         </div>
-        <div class="row mt-5">
-            <div class="col-12">
-                <form action="booking.php" method="post" class="mx-auto">
-                    <div class="form-group row mb-0">
-                        <div class="col-sm-6 mt-3">
-                            <label for="firstName">First Name *</label>
-                            <input type="text" class="form-control rounded-0" id="firstName" name="firstName" required>
-                        </div>
-                        <div class="col-sm-6 mt-3">
-                            <label for="lastName">Last Name *</label>
-                            <input type="text" class="form-control rounded-0" id="lastName" name="lastName" required>
-                        </div>
-                    </div>
-                    <div class="form-group row mb-0">
-                        <div class="col-sm-6 mt-3">
-                            <label for="email">Email *</label>
-                            <input type="email" class="form-control rounded-0" id="email" name="emailAddress" required>
-                        </div>
-                        <div class="col-sm-6 mt-3">
-                            <label for="phone">Phone *</label>
-                            <input type="tel" class="form-control rounded-0" id="phone" required>
-                        </div>
-                    </div>
-                    <div class="form-group row mb-0">
-                        <div class="col-sm-6 mt-3">
-                            <label for="tourType">Select Tour: *</label>
-                            <select class="form-control rounded-0" id="tourType" name="Tour Type" required>
-                                <option value="">Please Select</option>
-                                <option value="tourOne">Tour Type 1</option>
-                                <option value="tourTwo">Tour Type 2</option>
-                                <option value="tourThree">Tour Type 3</option>
-                                <option value="tourFour">Tour Type 4</option>
-                                <option value="tourFive">Tour Type 5</option>
-                                <option value="tourSix">Tour Type 6</option>
-                            </select>
-                        </div>
-                        <div class="col-sm-6 mt-3">
-                            <label for="peopleNum">Number of People * (1 to 5)</label>
-                            <input type="number" class="form-control rounded-0" id="peopleNum" min="1" max="5" required>
-                        </div>
-                    </div>
-                    <div class="form-group row mb-0">
-                        <div class="col-12 mt-3">
-                            <label for="pickupAddress">Pickup Address *</label>
-                            <input type="text" class="form-control rounded-0" id="pickupAddress" required>
-                        </div>
-                    </div>
-                    <div class="form-group row mb-0">
-                        <div class="col-sm-6 mt-3">
-                            <label for="tourDate">Pick a Date: *</label>
-                            <input type="date" class="form-control rounded-0" id="tourDate" required>
-                        </div>
-                        <div class="col-sm-6 mt-3">
-                            <label for="tourTime">Pick a Time: *</label>
-                            <input type="time" class="form-control rounded-0" id="tourTime" required>
-                        </div>
-                    </div>
-                    <div class="form-group row mb-0">
-                        <div class="col-12 mt-3">
-                            <label for="message">Message</label>
-                            <textarea id="message" rows="10" class="form-control rounded-0"></textarea>
-                        </div>
-                    </div>
-                    <div class="row mb-0">
-                        <div class="col-12 mt-3 d-flex justify-content-center">
-                            <button type="submit" class="btn btn-lg">Submit</button>
-                        </div>
-                    </div>
-            </div>
-            </form>
-        </div>
-    </div>
+
+        <a href="#" id="back-to-top" class="btn btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
+    </main>
 
     <footer class="copyright py-2 px-3 px-lg-5 bg-dark">
         <div class="container-fluid">
@@ -149,8 +178,6 @@
             </div>
         </div>
     </footer>
-
-    <a href="#" id="back-to-top" class="btn btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
 
     <!--[if lt IE 7]>
     <p class="browsehappy">
