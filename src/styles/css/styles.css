@@ -32,6 +32,7 @@
     8.6. Divider
     8.7. Red Icons
     8.8. Custom Spacer
+    8.9. Cookie Banner
 9. Media Queries
 
 */
@@ -102,13 +103,18 @@ body {
   bottom: 0;
   opacity: 0;
   color: #ffffff;
-  background: rgba(223, 46, 46, 0.9);
+  background: rgba(223, 69, 69, 0.9);
   -webkit-transition: opacity 0.25s ease;
   transition: opacity 0.25s ease;
 }
 
 .tour-caption:hover {
   opacity: 1;
+}
+
+.caption-border {
+  border: 2px solid #ffffff;
+  padding: 1rem 2rem;
 }
 
 /*-- 3.4. Why Us? --*/
@@ -118,7 +124,7 @@ body {
 
 /*-- 3.5. Reviews --*/
 .reviews {
-  background: #df2e2e;
+  background: #df4545;
   color: #ffffff;
 }
 
@@ -160,17 +166,21 @@ a {
 }
 
 a:hover {
-  color: #df2e2e;
+  color: #df4545;
   text-decoration: none;
 }
 
 .active-link {
-  color: #df2e2e;
+  color: #df4545;
+}
+
+.red-link {
+  color: #df4545;
 }
 
 /*-- 8.2. Buttons --*/
 .btn {
-  background: #df2e2e;
+  background: #df4545;
   color: #ffffff;
   font-size: 16px;
   border: none;
@@ -190,6 +200,8 @@ a:hover {
   bottom: 10px;
   right: 10px;
   display: none;
+  height: 50px;
+  width: 50px;
 }
 
 /*-- 8.4. Forms --*/
@@ -210,7 +222,7 @@ form {
   width: 3.25rem;
   max-width: 3.25rem;
   border-width: 0.2rem;
-  border-color: #df2e2e;
+  border-color: #df4545;
 }
 
 .white-divider.divider {
@@ -219,12 +231,25 @@ form {
 
 /*-- 8.7. Red Icons --*/
 .red-icons {
-  color: #df2e2e;
+  color: #df4545;
 }
 
 /*-- 8.8. Custom Spacer --*/
 .custom-spacer {
   height: 96px;
+}
+
+/*-- 8.9. Cookie Banner --*/
+.cookie-banner {
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  width: 100vw;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 999;
+  background: #ffffff;
 }
 
 /*---------------------------- 9. Media Queries ----*/

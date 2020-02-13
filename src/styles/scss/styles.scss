@@ -34,6 +34,7 @@
     8.6. Divider
     8.7. Red Icons
     8.8. Custom Spacer
+    8.9. Cookie Banner
 9. Media Queries
 
 */
@@ -112,6 +113,11 @@ body {
     }
 }
 
+.caption-border {
+    border: 2px solid $white;
+    padding: 1rem 2rem;
+}
+
 /*-- 3.4. Why Us? --*/
 .why-us {
     max-width: 1500px;
@@ -177,6 +183,10 @@ a {
     color: $color5;
 }
 
+.red-link {
+    color: $color5;
+}
+
 /*-- 8.2. Buttons --*/
 .btn {
     background: $color5;
@@ -199,6 +209,8 @@ a {
     bottom: 10px;
     right: 10px;
     display: none;
+    height: 50px;
+    width: 50px;
 }
 
 /*-- 8.4. Forms --*/
@@ -234,6 +246,18 @@ form {
 /*-- 8.8. Custom Spacer --*/
 .custom-spacer {
     height: 96px;
+}
+
+/*-- 8.9. Cookie Banner --*/
+.cookie-banner {
+    display: none;
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    background: $white;
 }
 
 /*---------------------------- 9. Media Queries ----*/

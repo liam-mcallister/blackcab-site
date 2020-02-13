@@ -32,4 +32,15 @@ $(document).ready(function () {
         lastPos = currentPos;
     });
 
+    // If the cookie banner has not been seen, display the banner
+    if(localStorage.getItem('cookieSeen') != 'shown'){
+        $(".cookie-banner").delay(2000).fadeIn();
+        localStorage.setItem('cookieSeen','shown')
+    }
+    
+    // Close the cookie banner by clicking the button
+    $('#close').click(function(e) {
+      $('.cookie-banner').fadeOut(); 
+    });
+
 });
