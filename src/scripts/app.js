@@ -42,18 +42,49 @@ $(document).ready(function () {
         $('.cookie-banner').fadeOut();
     });
 
-    // When the submit button is clicked, run the form validation function
-    $("#submit").click(function(e) {
-        e.preventDefault();
-        formValidation();
-    });
-
-    // Form validation
-    function formValidation() {
-        if ($("#firstName").val() === "") {
-            $("#firstNameLabel").after('<span class="error text-right">Please enter a name!</span>');
-            return false;
+    $('#form').validate({
+        rules: {
+            firstName: {
+                required: true,
+                minlength: 3,
+                maxlength: 30,
+                pattern: "^[a-zA-Z_]*$"
+            },
+            lastName: {
+                required: true,
+                minlength: 3,
+                maxlength: 30
+            },
+            emailAddress: {
+                required: true,
+                email: true
+            },
+            phone: {
+                required: true,
+                number: true,
+                minlength: 11
+            },
+            tourType: {
+                required: true
+            },
+            peopleNum: {
+                required: true
+            },
+            pickupAddress: {
+                required: true
+            },
+            tourDate: {
+                required: true
+            },
+            startTime: {
+                required: true
+            }
+        },
+        messages: {
+            firstname: {
+                pattern: "Enter a valid name"
+            }
         }
-    };
+    });
 
 });
