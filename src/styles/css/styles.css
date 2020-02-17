@@ -157,7 +157,11 @@ body {
 }
 
 /*----------------------------- 5. Booking Page ----*/
-/*----------------------------- 6. Booking Page ----*/
+.error {
+  color: #ee0e0e;
+}
+
+/*----------------------------- 6. Error 404 Page ----*/
 /*-- 6.1. Error 404 Height --*/
 .error-404-height {
   height: calc(100vh - 160px);

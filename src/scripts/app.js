@@ -42,4 +42,18 @@ $(document).ready(function () {
         $('.cookie-banner').fadeOut();
     });
 
+    // When the submit button is clicked, run the form validation function
+    $("#submit").click(function(e) {
+        e.preventDefault();
+        formValidation();
+    });
+
+    // Form validation
+    function formValidation() {
+        if ($("#firstName").val() === "") {
+            $("#firstNameLabel").after('<span class="error text-right">Please enter a name!</span>');
+            return false;
+        }
+    };
+
 });
