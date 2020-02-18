@@ -1,4 +1,4 @@
-@import "variables", "functions", "mixins";
+@import "variables";
 
 /*----------------------------------------------------
 ------------------------------- Table of Contents ----
@@ -8,13 +8,15 @@
     1.1. Universal
     1.2. Body
 2. Navigation
-    2.1. Navbar Toggler
+    2.1. Social Nav Background
+    2.2. Navbar Toggler
 3. Home Page
     3.1. Jumbotron
     3.2. About
     3.3. Tours
       3.3.1. Tour Card
       3.3.2. Tour Caption
+      3.3.3. Caption Border
     3.4. Why Us?
     3.5. Reviews
       3.5.1. Carousel Inner
@@ -22,13 +24,18 @@
 4. Tours Page
     4.1. Custom Tour Width
 5. Booking Page
-6. 404 Page
+  5.1. Form Error
+  5.2. Form Input Error
+6. Error 404 Page
     6.1. Error 404 Height
 7. Footer
 8. Components
     8.1. Links
+      8.1.1. Red Link
+      8.1.2. ID Anchor Links
     8.2. Buttons
     8.3. Back To Top Button
+      8.3.1. Chevron Icon Padding
     8.4. Forms
     8.5. Inputs
     8.6. Divider
@@ -48,22 +55,19 @@
   box-sizing: border-box;
 }
 
-/*-- 1.2. ID Anchor Links --*/
-html {
-    scroll-padding-top: 200px;
-  }
-
 /*-- 1.3. Body --*/
 body {
   color: $white;
 }
 
 /*------------------------------- 2. Navigation ----*/
+
+/*-- 2.1. Social Nav Background --*/
 .custom-bg-dark {
   background: $grey;
 }
 
-/*-- 2.1. Navbar Toggler --*/
+/*-- 2.2. Navbar Toggler --*/
 .navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active,
@@ -116,6 +120,7 @@ body {
   }
 }
 
+/*-- 3.3.3. Caption Border --*/
 .caption-border {
   border: 2px solid $white;
   padding: 1rem 2rem;
@@ -158,10 +163,18 @@ body {
 
 /*----------------------------- 5. Booking Page ----*/
 
+/*-- 5.1. Form Error --*/
 .error {
-  color: #ee0e0e;
+  color: $red;
 }
 
+/*-- 5.2. Form Input Error --*/
+input.error,
+input:focus.error,
+select.error,
+select:focus.error {
+  border: 1px solid $red;
+}
 
 /*----------------------------- 6. Error 404 Page ----*/
 
@@ -184,12 +197,14 @@ a {
   }
 }
 
-.active-link {
+/*-- 8.1.1. Red Link --*/
+.red-link {
   color: $color5;
 }
 
-.red-link {
-  color: $color5;
+/*-- 8.1.2. ID Anchor Links --*/
+html {
+  scroll-padding-top: 200px;
 }
 
 /*-- 8.2. Buttons --*/
@@ -216,6 +231,11 @@ a {
   display: none;
   height: 50px;
   width: 50px;
+}
+
+/*-- 8.3.1. Chevron Icon Padding --*/
+i.fa-chevron-up {
+  padding-top: 8px;
 }
 
 /*-- 8.4. Forms --*/
@@ -272,22 +292,19 @@ form {
   .social-icons {
     display: none;
   }
-  .custom-margin-bottom {
-    margin-bottom: 2rem;
-  }
 }
 
-// Small devices (landscape phones, less than 768px)
-@media (max-width: 767px) {
-}
+// // Small devices (landscape phones, less than 768px)
+// @media (max-width: 767px) {
+// }
 
-// Medium devices (tablets, less than 992px)
-@media (max-width: 991px) {
-}
+// // Medium devices (tablets, less than 992px)
+// @media (max-width: 991px) {
+// }
 
-// Large devices (desktops, less than 1200px)
-@media (max-width: 1199px) {
-}
+// // Large devices (desktops, less than 1200px)
+// @media (max-width: 1199px) {
+// }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {

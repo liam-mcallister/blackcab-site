@@ -42,13 +42,13 @@ $(document).ready(function () {
         $('.cookie-banner').fadeOut();
     });
 
+    // Form validation (using jQuery Validation Plugin)
     $('#form').validate({
         rules: {
             firstName: {
                 required: true,
                 minlength: 3,
-                maxlength: 30,
-                pattern: "^[a-zA-Z_]*$"
+                maxlength: 30
             },
             lastName: {
                 required: true,
@@ -80,11 +80,23 @@ $(document).ready(function () {
                 required: true
             }
         },
+        // Some custom error messages
         messages: {
-            firstname: {
-                pattern: "Enter a valid name"
+            firstName: {
+                minlength: "First name must be 3 letters or more.",
+                maxlength: "First name must be less than 30 letters."
+            },
+            lastName: {
+                minlength: "Last name must be 3 letters or more.",
+                maxlength: "Last name must be less than 30 letters."
+            },
+            phone: {
+                minlength: "Phone number must be at least 11 digits."
             }
-        }
+        },
+        submitHandler: function(form) {
+            form.submit();
+          }
     });
 
 });
