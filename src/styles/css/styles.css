@@ -1,0 +1,334 @@
+/*----------------------------------------------------
+------------------------------- Table of Contents ----
+------------------------------------------------------
+
+1. General
+    1.1. Universal
+    1.2. Body
+2. Navigation
+    2.1. Social Nav Background
+    2.2. Navbar Toggler
+3. Home Page
+    3.1. Jumbotron
+    3.2. About
+    3.3. Tours
+      3.3.1. Tour Card
+      3.3.2. Tour Caption
+      3.3.3. Caption Border
+    3.4. Why Us?
+    3.5. Reviews
+      3.5.1. Carousel Inner
+      3.5.2. Carousel Indicators
+4. Tours Page
+    4.1. Custom Tour Width
+5. Booking Page
+  5.1. Form Error
+  5.2. Form Input Error
+6. Error 404 Page
+    6.1. Error 404 Height
+7. Footer
+8. Components
+    8.1. Links
+      8.1.1. Red Link
+      8.1.2. ID Anchor Links
+    8.2. Buttons
+    8.3. Back To Top Button
+      8.3.1. Chevron Icon Padding
+    8.4. Forms
+    8.5. Inputs
+    8.6. Divider
+    8.7. Red Icons
+    8.8. Custom Spacer
+    8.9. Cookie Banner
+
+*/
+/*---------------------------------- 1. General ----*/
+/*-- 1.1. Universal --*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*-- 1.3. Body --*/
+body {
+  color: #ffffff;
+}
+
+/*------------------------------- 2. Navigation ----*/
+/*-- 2.1. Social Nav Background --*/
+.custom-bg-dark {
+  background: #252525;
+}
+
+/*-- 2.2. Navbar Toggler --*/
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:hover {
+  border: none;
+  outline: none;
+}
+
+/*-------------------------------- 3. Home Page ----*/
+/*-- 3.1. Jumbotron --*/
+.jumbotron {
+  height: 100vh;
+  min-height: 40rem;
+  padding: 72px 0 0 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(58, 46, 57, 0.7)), to(rgba(58, 46, 57, 0.7))), url(../../../images/jumbotron-background.jpg);
+  background: linear-gradient(to bottom, rgba(58, 46, 57, 0.7) 0, rgba(58, 46, 57, 0.7) 100%), url(../../../images/jumbotron-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+/*-- 3.2. About --*/
+/*-- 3.3. Tours --*/
+/*-- 3.3.1. Tour Card --*/
+.tour-card {
+  position: relative;
+  display: block;
+}
+
+.tour-card img {
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+}
+
+/*-- 3.3.2. Tour Caption --*/
+.tour-caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  opacity: 1;
+  background: transparent;
+  color: #ffffff;
+  -webkit-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+
+.tour-caption:hover {
+  background: rgba(223, 69, 69, 0.9);
+}
+
+/*-- 3.3.3. Caption Border --*/
+.caption-border {
+  padding: 1rem 2rem;
+  border: 2px solid #ffffff;
+}
+
+/*-- 3.4. Why Us? --*/
+.why-us {
+  max-width: 1500px;
+}
+
+/*-- 3.5. Reviews --*/
+.reviews {
+  background: #df4545;
+  color: #ffffff;
+}
+
+/*-- 3.5.1. Carousel Inner --*/
+.carousel-inner {
+  margin-bottom: 5rem;
+  height: 200px;
+}
+
+/*-- 3.5.2. Carousel Indicators --*/
+.carousel-indicators {
+  bottom: -50px;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+/*------------------------------- 4. Tours Page ----*/
+/*-- 4.1. Custom Tour Width --*/
+.custom-tour-width {
+  max-width: 1200px;
+}
+
+/*----------------------------- 5. Booking Page ----*/
+/*-- 5.1. Form Error --*/
+.error {
+  color: #ff0006;
+}
+
+/*-- 5.2. Form Input Error --*/
+input.error,
+input:focus.error,
+select.error,
+select:focus.error {
+  border: 1px solid #ff0006;
+}
+
+/*----------------------------- 6. Error 404 Page ----*/
+/*-- 6.1. Error 404 Height --*/
+.error-404-height {
+  height: calc(100vh - 160px);
+}
+
+/*----------------------------------- 7. Footer ----*/
+/*------------------------------- 8. Components ----*/
+/*-- 8.1. Links --*/
+a {
+  color: #ffffff;
+}
+
+a:hover {
+  color: #df4545;
+  text-decoration: none;
+}
+
+/*-- 8.1.1. Red Link --*/
+.red-link {
+  color: #df4545;
+}
+
+/*-- 8.1.2. ID Anchor Links --*/
+html {
+  scroll-padding-top: 200px;
+}
+
+/*-- 8.2. Buttons --*/
+.btn {
+  background: #df4545;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  border-radius: 10rem;
+  max-width: 105.183px;
+}
+
+.btn:focus, .btn:active {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/*-- 8.3. Back To Top Button --*/
+.back-to-top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: none;
+  height: 50px;
+  width: 50px;
+}
+
+/*-- 8.3.1. Chevron Icon Padding --*/
+i.fa-chevron-up {
+  padding-top: 8px;
+}
+
+/*-- 8.4. Forms --*/
+form {
+  max-width: 800px;
+}
+
+/*-- 8.5. Inputs --*/
+.form-control:focus,
+.form-control:active {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/*-- 8.6. Divider --*/
+.divider, .divider.white-divider {
+  width: 3.25rem;
+  max-width: 3.25rem;
+  border-width: 0.2rem;
+  border-color: #df4545;
+}
+
+.white-divider.divider {
+  border-color: #ffffff;
+}
+
+/*-- 8.7. Red Icons --*/
+.red-icons {
+  color: #df4545;
+}
+
+/*-- 8.8. Custom Spacer --*/
+.custom-spacer {
+  height: 96px;
+}
+
+/*-- 8.9. Cookie Banner --*/
+.cookie-banner {
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  width: 100vw;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 999;
+  background: #ffffff;
+}
+
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Max Width 575
+2. Min Width 576
+3. Min Width 768
+4. Min Width 992
+5. Min Width 1200
+
+*/
+/*---------------------------- 1. Max Width 575 ----*/
+@media (max-width: 575px) {
+  .social-icons {
+    display: none;
+  }
+}
+
+/*---------------------------- 2. Min Width 576 ----*/
+@media (min-width: 576px) {
+  .jumbotron-margin {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+}
+
+/*---------------------------- 3. Min Width 768 ----*/
+@media (min-width: 768px) {
+  .carousel-inner {
+    padding: 0 5rem;
+  }
+}
+
+/*---------------------------- 4. Min Width 992 ----*/
+@media (min-width: 992px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+/*--------------------------- 5. Min Width 1200 ----*/
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,52 @@
+/*----------------------------------------------------
+---------------------------------Table of Contents----
+------------------------------------------------------
+
+1. Max Width 575
+2. Min Width 576
+3. Min Width 768
+4. Min Width 992
+5. Min Width 1200
+
+*/
+
+/*---------------------------- 1. Max Width 575 ----*/
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {
+    .social-icons {
+        display: none;
+    }
+}
+
+/*---------------------------- 2. Min Width 576 ----*/
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .jumbotron-margin {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+}
+
+/*---------------------------- 3. Min Width 768 ----*/
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .carousel-inner {
+        padding: 0 5rem;
+    }
+}
+
+/*---------------------------- 4. Min Width 992 ----*/
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+}
+
+/*--------------------------- 5. Min Width 1200 ----*/
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 4rem;
+    }
+}
