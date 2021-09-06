@@ -35,8 +35,7 @@ This website uses the following technologies:
 
 ## 4. Links
 
-[Live Site](https://liam-mcallister.github.io/blackcab-site/)
-[GitHub Repo](https://github.com/liam-mcallister/blackcab-site)
+[Live Site](https://liam-mcallister.github.io/blackcab-site/) / [GitHub Repo](https://github.com/liam-mcallister/blackcab-site)
 
 ## 5. Author
 
