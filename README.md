@@ -12,7 +12,11 @@
 
 A website that allows users to look up information and book various tours around Belfast and Northern Ireland.
 
-![Screenshot of Bel-Cab Tours website](http://www.liamsportfolio.site/images/screenshots/blackcab.jpg)
+This was the first full website that I created. Up to this point I had created various separate components while learning (e.g. navbars, cards and accordions) but I thought that it was time to kick it up a gear and create a full, multi-paged hosted website.
+
+I decided to go with Bootstrap and SCSS in order to speed up development time on this project and later made the decision to concatenate/minify the CSS & JS in order to decrease page load times.
+
+![Bel-Cab Tours website screenshot](https://user-images.githubusercontent.com/49287478/134687831-9513ec8a-0d09-438d-9bb3-4d451df3abdf.png)
 
 ## 2. Tech
 
@@ -23,7 +27,7 @@ This website uses the following technologies:
 -   [jQuery](https://jquery.com/) - Feature-rich JavaScript library
 -   [Bootstrap 4](https://getbootstrap.com/) - Open-source CSS framework
 -   [Font Awesome 4](https://fontawesome.com/) - Font and icon toolkit
--   [jQuery Validation Plugin](https://jqueryvalidation.org/) - jQuery plugin for clientside form validation
+-   [jQuery Validation Plugin](https://jqueryvalidation.org/) - jQuery plugin for client-side form validation
 -   [Gulp](http://gulpjs.com) - Streaming build system
 
 ## 3. Installation
@@ -35,7 +39,8 @@ This website uses the following technologies:
 
 ## 4. Links
 
-[Live Site](https://liam-mcallister.github.io/blackcab-site/) / [GitHub Repo](https://github.com/liam-mcallister/blackcab-site)
+-   [Live Site](https://liam-mcallister.github.io/blackcab-site/)
+-   [GitHub Repo](https://github.com/liam-mcallister/blackcab-site)
 
 ## 5. Author
 
